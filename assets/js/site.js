@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    setTimeout(function () {
+    const openRegisterModal =  setTimeout(function () {
         $('#dangkydungthuModal').modal('show');
     }, 20000);
 
@@ -55,10 +55,13 @@ $(document).ready(function () {
             });
 
             $('#dangkydungthuModal').modal('hide');
+            
             setTimeout(function () {
                 $('.modal-backdrop').remove();
                 $('#dangkythanhcong').modal('toggle');
             }, 300);
+
+            clearTimeout(openRegisterModal);
         })
     })
 });
