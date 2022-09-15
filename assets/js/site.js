@@ -50,7 +50,6 @@ $(document).ready(function () {
             $('#registrationForm')[0].reset();
 
             data.forEach(function(val, key, fD){
-                // here you can add filtering conditions
                 data.delete(key)
             });
 
