@@ -1,7 +1,7 @@
 $(document).ready(function () {
     setTimeout(function () {
-        $('#dangkydungthuModal').modal('toggle');
-    }, 2000);
+        $('#dangkydungthuModal').modal('show');
+    }, 20000);
 
     $(".rotate1").click(function (e) {
         e.preventDefault();
