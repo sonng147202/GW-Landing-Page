@@ -776,7 +776,7 @@ body {
     /* --offset: 50px; */
     position: sticky;
     place-self: end;
-    right: 12px;
+    right: 32px;
     bottom: 14vh;
     margin-top: -7vh;
 
