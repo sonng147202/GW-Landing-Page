@@ -401,7 +401,7 @@
 }
 
 #section1_4 .table-price thead,
-#section1_4 .table-price tbody 
+#section1_4 .table-price tbody.collapse-table-price 
 {
     border-style: hidden;
 }
@@ -423,21 +423,21 @@
     cursor: pointer;
 }
 
-#section1_4 .table-price tbody {
+#section1_4 .table-price tbody.collapse-table-price {
     display: block;
     height: 0;
     overflow: hidden;
 }
 
 #section1_4 .table-price thead,
-#section1_4 .table-price tbody tr
+#section1_4 .table-price tbody.collapse-table-price tr
 {
     display: table;
     width:100%;
     table-layout:fixed;
 }
 
-#section1_4 .table-price tbody.show {
+#section1_4 .table-price tbody.collapse-table-price.show {
     height: 100%;
 }
 
@@ -536,6 +536,14 @@ span.font-col1 {
     flex-direction: row;
     align-content: center;
     width: 100%;
+    text-align: center;
+}
+
+#section1_5 .header-price {
+    padding-top: 20px;
+}
+
+#section1_5 .header-price div:nth-child(-n+4) {
     text-align: center;
 }
 
