@@ -78,6 +78,9 @@
         background-color: #fff;
         top: 15%;
     }
+    #section1_2 .text-question-rep{
+        width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -154,6 +157,9 @@
         background-color: #fff;
         top: 15%;
     }
+    #section1_2 .text-question-rep {
+        width: 50%;
+    }
 }
 
 .fw-my-bold {
@@ -178,7 +184,7 @@
     font-weight: 700;
     margin-left: auto;
     margin-right: auto;
-    width: 68%;
+    /* width: 68%; */
     padding-top: 4%;
     padding-bottom: 1%;
 }
