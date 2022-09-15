@@ -3598,48 +3598,48 @@
         aria-hidden="true">
         <div class="modal-dialog modal-md">
             <div class="modal-content">
-                <div class="modal-header" style="border-bottom: unset;">
-                    <h5 class="modal-title">Bạn cần nhận tư vấn từ chuyên gia Google Workspace? Hãy để lại thông tin cho chúng tôi.</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-12">
-                            <div id="thongtindangky">
+                <form id="registrationForm">
+                    <div class="modal-header" style="border-bottom: unset;">
+                        <h5 class="modal-title">Bạn cần nhận tư vấn từ chuyên gia Google Workspace? Hãy để lại thông tin cho chúng tôi.</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
                                 <div class="input-group pb-2">
                                     <span class="input-group-addon"><i class="fa-solid fa-user"></i></span>
-                                    <input id="username" type="text" class="form-control input-ttdk" name="username"
+                                    <input id="username" type="text" class="form-control input-ttdk" name="data[username]"
                                         placeholder="Tên của anh/chị">
                                 </div>
                                 <div class="input-group pb-2">
                                     <span class="input-group-addon"><i class="fa-solid fa-phone"></i></span>
-                                    <input id="phone" type="number" class="form-control input-ttdk" name="phone"
+                                    <input id="phone" type="number" class="form-control input-ttdk" name="data[phone]"
                                         placeholder="Số điện thoại của anh/chị">
                                 </div>
                                 <div class="input-group pb-2">
                                     <span class="input-group-addon"><i class="fa-solid fa-envelope"></i></span>
-                                    <input id="email" type="text" class="form-control input-ttdk" name="email"
+                                    <input id="email" type="text" class="form-control input-ttdk" name="data[email]"
                                         placeholder="Email của anh/chị">
                                 </div>
                                 <div class="input-group pb-2">
                                     <span class="input-group-addon"><i class="fa-solid fa-building"></i></span>
-                                    <input id="company" type="text" class="form-control input-ttdk" name="company"
+                                    <input id="company" type="text" class="form-control input-ttdk" name="data[company]"
                                         placeholder="Tên công ty/tổ chức anh/chị đang làm việc">
                                 </div>
 
                                 <div class="input-group pb-2">
                                     <span class="input-group-addon"><i class="fa-solid fa-users"></i></span>
-                                    <input id="numberemployee" type="number" class="form-control input-ttdk"
-                                        name="numberemployee" placeholder="Số lượng nhân sự tại công ty/tổ chức">
+                                    <input id="numberemployee" type="data[number]" class="form-control input-ttdk"
+                                        name="data[numberemployee]" placeholder="Số lượng nhân sự tại công ty/tổ chức">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer justify-content-start" style="border-top: unset;">
-                    <button id="btnDangky" type="button" class="btn btn-orange fw-my-bold mx-auto">GỬI THÔNG TIN ĐĂNG
-                        KÝ</button>
-                </div>
+                    <div class="modal-footer justify-content-start" style="border-top: unset;">
+                        <button id="btnDangky" type="submit" class="btn btn-orange fw-my-bold mx-auto">GỬI THÔNG TIN ĐĂNG
+                            KÝ</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -3668,8 +3668,6 @@
 
     <!-- Your Plugin chat code -->
     <div id="fb-customer-chat" class="fb-customerchat"></div>
-
-    <!-- update github lần 1 -->
 </body>
 
 </html>

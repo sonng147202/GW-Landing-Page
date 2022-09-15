@@ -10,14 +10,6 @@ $(document).ready(function () {
         $(this).toggleClass("down");
     });
 
-    $("#btnDangky").click(function () {
-        $('#dangkydungthuModal').modal('toggle');
-        setTimeout(function () {
-            $('.modal-backdrop').remove();
-            $('#dangkythanhcong').modal('toggle');
-        }, 300);
-    });
-
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
@@ -41,5 +33,32 @@ $(document).ready(function () {
             pane.addClass("active");
         })
     })
+
+    $('#registrationForm').submit((e) => {
+        e.preventDefault();
+
+        const spreadsheets_api = 'https://sheetdb.io/api/v1/hyeb9o1o6347r';
+        const data = new FormData($('#registrationForm')[0]);
+        
+        fetch(spreadsheets_api, {
+            method: "POST",
+            body: data
+        })
+        .then((response) => {
+            console.log(response);
+
+            $('#registrationForm')[0].reset();
+
+            data.forEach(function(val, key, fD){
+                // here you can add filtering conditions
+                data.delete(key)
+            });
+
+            $('#dangkydungthuModal').modal('hide');
+            setTimeout(function () {
+                $('.modal-backdrop').remove();
+                $('#dangkythanhcong').modal('toggle');
+            }, 300);
+        })
+    })
 });
-// update github
