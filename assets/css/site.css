@@ -768,8 +768,8 @@ body {
     /* --offset: 50px; */
     position: sticky;
     place-self: end;
-
-    bottom: 3vh;
+    right: 3vw;
+    bottom: 14vh;
     margin-top: -7vh;
 
     margin-right: 23px;
