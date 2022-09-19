@@ -37,7 +37,7 @@ $(document).ready(function () {
     $('#registrationForm').submit((e) => {
         e.preventDefault();
 
-        const spreadsheets_api = 'https://sheetdb.io/api/v1/hyeb9o1o6347r';
+        const spreadsheets_api = 'https://sheetdb.io/api/v1/xb1uos951uws6';
         const data = new FormData($('#registrationForm')[0]);
         
         fetch(spreadsheets_api, {
