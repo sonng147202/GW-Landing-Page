@@ -482,7 +482,8 @@
     width: 100%;
     height: 60px;
     color: #000;
-    background-color: #bdc3c7;
+    font-weight: 600;
+    background-color: transparent;
     border: 1px solid #ecf0f1;
 }
 
@@ -955,6 +956,10 @@ a{
         padding-right: 10px;
     }
 
+    #section1_4 .table-price {
+        border-top: 4px solid #4285F4;
+        background: #FFFFFF;
+    }
     #section1_4 div.section1-4-PC {
         display: none;
     }
