@@ -19,20 +19,53 @@ $(document).ready(function () {
         $(".tooltip").attr('data-color', $(this).data("color"));
     });
 
-    $(".btn-table-price").click(function(){
-        $(".collapse-table-price").toggleClass("show");
-    }); 
+    // $(".btn-table-price").click(function(){
+    //     $(".collapse-table-price").toggleClass("show");
+    // }); 
 
-    $("#section1_5 .tabs .tab-item").each(function (index) {
-        const pane = $(`#section1_5 .tab-content .tab-pane.tab-${index + 1}`);
-        $(this).click(function (e) {
-            $("#section1_5 .tabs .tab-item.active").removeClass("active");
-            $("#section1_5 .tab-content .tab-pane.active").removeClass("active");
-
-            $(this).addClass("active");
-            pane.addClass("active");
-        })
-    })
+    $(".pricing-table .carousel").slick({
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 4,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    dots: true,
+                    customPaging: function(slick,index) {
+                        var carouselTitle = [
+                            "Dưới 20 nhân sự",
+                            "Từ 21-100 nhân sự",
+                            "Từ 101 -300 nhân sự",
+                            "Từ 300 nhân sự trở lên"
+                        ];
+                        return `<button type="button" class="slick-btn">${carouselTitle[index]}</button>`; 
+                    },
+                    autoplay: false,
+                    centerMode: false,
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    customPaging: function(slick,index) {
+                        var carouselTitle = [
+                            "Dưới 20 nhân sự",
+                            "Từ 21-100 nhân sự",
+                            "Từ 101 -300 nhân sự",
+                            "Từ 300 nhân sự trở lên"
+                        ];
+                        return `<button type="button" class="slick-btn">${carouselTitle[index]}</button>`; 
+                    },
+                    autoplay: false,
+                    centerMode: false,
+                    slidesToShow: 1.5,
+                }
+            },
+        ]
+    });
 
     $('#registrationForm').submit((e) => {
         e.preventDefault();

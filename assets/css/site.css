@@ -13,154 +13,6 @@
     --color-chevron-faq: #828282;
 }
 
-@media (max-width: 767px) {
-    #section1_6 .why-text div {
-        background: #FFFFFF;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        margin-bottom: 15PX;
-        HEIGHT: 47px;
-    }
-
-    #section1_5 .img-benvung {
-        width: 60%;
-    }
-
-    #section1_5 .img-girlbenvung {
-        width: 60%;
-    }
-
-    #before_footer .add-space {
-        margin-bottom: 1.5rem;
-    }
-
-    .ban-goi-faq-pc {
-        display: none;
-    }
-
-    .ban-goi-faq-mobile {
-        display: block;
-    }
-
-    #section1_4 div.section1-4-PC {
-        display: none;
-    }
-
-    #section1_4 div.section1-4-mobile {
-        display: block;
-    }
-
-    #section1_5 div.section1-5-PC {
-        display: none;
-    }
-
-    #section1_5 div.section1-5-mobile {
-        display: block;
-    }
-
-    #section1_8 .border-contact::before {
-        position: absolute;
-        content: unset;
-        display: block;
-        width: 1px;
-        height: 70%;
-        left: 0;
-        background-color: #fff;
-        top: 15%;
-    }
-
-    #section1_8 .border-contact::after {
-        position: absolute;
-        content: unset;
-        display: block;
-        width: 1px;
-        height: 70%;
-        right: 0;
-        background-color: #fff;
-        top: 15%;
-    }
-    #section1_2 .text-question-rep{
-        width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .header-title {
-        border-right: 2px solid var(--border-color-table-price);
-        border-left: 2px solid var(--border-color-table-price);
-        padding: 0px 20px;
-        width: 108px;
-    }
-
-    #section1_6 .why-text div {
-        background: #FFFFFF;
-        border: 1px solid rgba(255, 255, 255, 0.5);
-        margin-bottom: 15PX;
-        HEIGHT: 47px;
-        margin-left: 17%;
-        margin-right: 17%;
-    }
-
-    #section1_5 .img-benvung {
-        width: 77%;
-    }
-
-    #section1_5 .img-girlbenvung {
-        width: 92%;
-    }
-
-    .ban-goi-faq-mobile {
-        display: none;
-    }
-
-    .ban-goi-faq-pc {
-        display: block;
-    }
-
-    #section1_4 div.section1-4-PC {
-        display: block;
-    }
-
-    #section1_4 div.section1-4-mobile {
-        display: none;
-    }
-
-    #section1_5 div.section1-5-PC {
-        display: block;
-    }
-
-    #section1_5 div.section1-5-mobile {
-        display: none;
-    }
-
-    #section1_5 .text-lienhe-benvung-PC {
-        margin-top: -9px;
-    }
-
-    #section1_8 .border-contact::before {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 1px;
-        height: 70%;
-        left: 0;
-        background-color: #fff;
-        top: 15%;
-    }
-
-    #section1_8 .border-contact::after {
-        position: absolute;
-        content: "";
-        display: block;
-        width: 1px;
-        height: 70%;
-        right: 0;
-        background-color: #fff;
-        top: 15%;
-    }
-    #section1_2 .text-question-rep {
-        width: 50%;
-    }
-}
 
 .fw-my-bold {
     font-weight: 600;
@@ -367,6 +219,174 @@
     margin-bottom: -1px;
 }
 
+/* ============ pricing-table ============ */
+
+.pricing-table{
+    background-color: #EDF1FA;
+}
+.pricing-table .pricing-table__title{
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.pricing-table .carousel{
+
+}
+.pricing-table .slick-dots{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    top: -12rem;
+    left: 0;
+}
+.pricing-table .slick-dots > li{
+    width: 50%;
+    height: 5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+.pricing-table .slick-dots .slick-btn{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+}
+.pricing-table .slick-dots li.slick-active .slick-btn{
+    color: #fff;
+    background-color: #4285F4;
+}
+.pricing-table .carousel .slick-slide {
+    margin: 0 10px;
+}
+.pricing-table .carousel .carousel__focus{
+    height: 170px;
+    padding: 20px 10px;
+    background-color: var(--carousel-color);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+.pricing-table .carousel .carousel__title{
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.pricing-table .carousel .carousel__btn{
+    padding: 10px 15px;
+    color: var(--carousel-color);
+    text-align: center;
+    font-weight: 600;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+.pricing-table .carousel .carousel__btn.btn-none{
+    color: transparent;
+    background-color: transparent;
+}
+.pricing-table .carousel .carousel__content{
+    padding-bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.pricing-table .carousel .carousel__box{
+    height: 180px;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pricing-table .carousel .carousel__box:nth-child(2){
+    border-top: 1px solid #E1E2E4;
+    border-bottom: 1px solid #E1E2E4;
+}
+.pricing-table .carousel .carousel__box-title{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.pricing-table .carousel .carousel__box-price{
+    margin: 0;
+    font-size: 34px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pricing-table .carousel .carousel__box-price > span{
+    margin-left: 5px;
+    padding: 2px 6px;
+    color: #545454;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #F2F2F2;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+}
+.pricing-table .carousel .carousel__box-monthly{
+    margin: 0;
+    color: #545454;
+}
+.pricing-table .carousel .carousel__box-slogan{
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.pricing-table .carousel .carousel__box-contact{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.pricing-table .carousel .carousel__box-svg{
+    margin: 10px;
+}
+
+.part-324 .discount-chart{
+    background-color: #FFFFFF;
+}
+.discount-chart .discount-chart__title{
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.discount-chart .discount-chart__sub-title{
+    margin-bottom: 35px;
+    text-align: center;
+}
+.discount-chart .discount-chart__sub-title p{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.discount-chart img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.discount-chart .chart{
+    display: block;
+}
+.discount-chart .chart-mobi{
+    display: none;
+}
+
 
 /* ============ section1_4 ============ */
 
@@ -405,7 +425,13 @@
     vertical-align: middle;
     text-align: center;
 }
-
+#section1_4 .table-price tr td ul{
+    padding: 10px 15px;
+}
+#section1_4 .table-price tr td ul li{
+    text-align: left;
+    margin-bottom: 10px;
+}
 #section1_4 .table-price thead,
 #section1_4 .table-price tbody.collapse-table-price 
 {
@@ -417,7 +443,7 @@
     user-select: none;
 }
 
-#section1_4 .table-price thead .btn-table-price::before{
+/* #section1_4 .table-price thead .btn-table-price::before{
     content: "Xem chi tiết";
     padding: 5px 10px;
     color: #fff;
@@ -427,11 +453,11 @@
     bottom: 100%;
     left: 0; 
     cursor: pointer;
-}
+} */
 
 #section1_4 .table-price tbody.collapse-table-price {
     display: block;
-    height: 0;
+    /* height: 0; */
     overflow: hidden;
 }
 
@@ -443,9 +469,9 @@
     table-layout:fixed;
 }
 
-#section1_4 .table-price tbody.collapse-table-price.show {
+/* #section1_4 .table-price tbody.collapse-table-price.show {
     height: 100%;
-}
+} */
 
 #section1_4 .nav-pills .nav-item {
     width: 33.33333%;
@@ -793,14 +819,15 @@ span.font-col1 {
 /* ============ css for arrow to scroll to top of page ============ */
 
 body {
-    display: grid;
+    /* display: grid; */
     /* scroll-behavior: smooth; */
 }
-
+a{
+    text-decoration: none;
+}
 .arrow-top {
     /* --offset: 50px; */
-    position: sticky;
-    place-self: end;
+    position: fixed;
     right: 32px;
     bottom: 14vh;
     margin-top: -7vh;
@@ -888,4 +915,170 @@ body {
     border-radius: 100px;
     position: sticky;
     bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .pricing-table .pricing-table__title{
+        margin-bottom: 15.5rem;
+    }
+}
+@media (max-width: 767px) {
+    #section1_6 .why-text div {
+        background: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 15PX;
+        HEIGHT: 47px;
+    }
+
+    #section1_5 .img-benvung {
+        width: 60%;
+    }
+
+    #section1_5 .img-girlbenvung {
+        width: 60%;
+    }
+
+    #before_footer .add-space {
+        margin-bottom: 1.5rem;
+    }
+
+    .ban-goi-faq-pc {
+        display: none;
+    }
+
+    .ban-goi-faq-mobile {
+        display: block;
+    }
+
+    .pricing-table .slick-dots > li{
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    #section1_4 div.section1-4-PC {
+        display: none;
+    }
+
+    #section1_4 div.section1-4-mobile {
+        display: block;
+    }
+
+    #section1_5 div.section1-5-PC {
+        display: none;
+    }
+
+    #section1_5 div.section1-5-mobile {
+        display: block;
+    }
+
+    #section1_8 .border-contact::before {
+        position: absolute;
+        content: unset;
+        display: block;
+        width: 1px;
+        height: 70%;
+        left: 0;
+        background-color: #fff;
+        top: 15%;
+    }
+
+    #section1_8 .border-contact::after {
+        position: absolute;
+        content: unset;
+        display: block;
+        width: 1px;
+        height: 70%;
+        right: 0;
+        background-color: #fff;
+        top: 15%;
+    }
+    #section1_2 .text-question-rep{
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-title {
+        border-right: 2px solid var(--border-color-table-price);
+        border-left: 2px solid var(--border-color-table-price);
+        padding: 0px 20px;
+        width: 108px;
+    }
+
+    #section1_6 .why-text div {
+        background: #FFFFFF;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 15PX;
+        HEIGHT: 47px;
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+
+    #section1_5 .img-benvung {
+        width: 77%;
+    }
+
+    #section1_5 .img-girlbenvung {
+        width: 92%;
+    }
+
+    .ban-goi-faq-mobile {
+        display: none;
+    }
+
+    .ban-goi-faq-pc {
+        display: block;
+    }
+
+    .discount-chart .chart{
+        display: block;
+    }
+    .discount-chart .chart-mobi{
+        display: none;
+    }
+
+    #section1_4 div.section1-4-PC {
+        display: block;
+    }
+
+    #section1_4 div.section1-4-mobile {
+        display: none;
+    }
+
+    #section1_5 div.section1-5-PC {
+        display: block;
+    }
+
+    #section1_5 div.section1-5-mobile {
+        display: none;
+    }
+
+    #section1_5 .text-lienhe-benvung-PC {
+        margin-top: -9px;
+    }
+
+    #section1_8 .border-contact::before {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 70%;
+        left: 0;
+        background-color: #fff;
+        top: 15%;
+    }
+
+    #section1_8 .border-contact::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 1px;
+        height: 70%;
+        right: 0;
+        background-color: #fff;
+        top: 15%;
+    }
+    #section1_2 .text-question-rep {
+        width: 50%;
+    }
 }
