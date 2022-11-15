@@ -828,7 +828,7 @@ a{
 .arrow-top {
     /* --offset: 50px; */
     position: fixed;
-    right: 32px;
+    right: 0.625rem;
     bottom: 14vh;
     margin-top: -7vh;
 
