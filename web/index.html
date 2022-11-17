@@ -16,7 +16,7 @@
 
 <body>
 
-    <section id="section1_1" class="over-horizontal-clip">
+    <section id="section1_1" class="over-horizontal-clip d-none d-md-block">
         <div class="container">
             <div class="row py-4">
                 <div class="col-md-6 col-12">
@@ -68,12 +68,52 @@
             </div>
         </div>
     </section>
+    <!-- Mobi -->
+    <nav id="section-nav" class="d-block d-md-none">
+        <div class="menu">
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn px-4">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <ul>
+               <li><a href="#feature">Tính năng</a></li>
+               <li><a href="#pricing-table">Bảng giá</a></li>
+               <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#" class="btn-hotline d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#dangkydungthuModal">
+                <span>đăng ký tư vấn dùng thử</span>
+            </a>
+        </div>
+    </nav>
 
     <section id="section1_2" class="over-horizontal-clip">
         <div class="container-fluid backgrd pad-text">
             <div class="row">
+                <div class="col-12 d-block d-md-none">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="">
+                            <img src="../assets/images/LogoCodeLovers.svg">
+                        </a>
+                        <div class="vl"></div>
+                        <div class="font-size-head d-flex">
+                            <font style="color:#4285F4;">G</font>
+                            <font style="color:#EA4335;">o</font>
+                            <font style="color:#FBBC04;">o</font>
+                            <font style="color:#4285F4;">g</font>
+                            <font style="color:#34A853;">l</font>
+                            <font style="color:#EA4335;">e</font>
+                            <font class="text-head-left-intro mt-1" style="color:#4B4848;">Workspace</font>
+                        </div>
+                    </div>
+                    <div class="text-represent py-2 py-md-1 text-center">
+                        <font style="color: #4285F4; font-weight: bold; word-spacing: 1px;">ĐẠI LÝ CẤP CAO CỦA GOOGLE
+                            TẠI NHẬT BẢN</font>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12 text-center">
-                    <div class="text-question d-md-flex justify-content-center">
+                    <div class="text-question d-flex justify-content-center">
                         <div class="text-question-left d-flex justify-content-center">
                             <font style="color:#4285F4;">G</font>
                             <font style="color:#EA4335;">o</font>
@@ -284,9 +324,6 @@
         <div class="chart">
             <img src="../assets/images/chart.png" alt="chart">
         </div>
-        <div class="chart-mobi">
-            <img src="../assets/images/chart-mobi.png" alt="chart-mobi">
-        </div>
     </div>
 
     <section id="section1_4">
@@ -316,7 +353,7 @@
                                             style="border-top-left-radius: 4px; opacity: 0.7;" data-bs-toggle="tooltip"
                                             data-color="primary" data-bs-placement="top"
                                             title="Bộ công cụ ưu tiên sự kết nối và cộng tác trong doanh nghiệp">
-                                            FRONTLINE
+                                            BUSINESS STARTER
                                         </div>
     
                                     </td>
@@ -324,14 +361,14 @@
                                         <div class="tooltip-hover align-items-center" style="opacity: 0.85;"
                                             data-bs-toggle="tooltip" data-color="primary" data-bs-placement="top"
                                             title=" Bộ công cụ văn phòng chuyên nghiệp với 30GB lưu trữ cho mỗi tài khoản">
-                                            BUSINESS STARTER
+                                            BUSINESS STANDARD
                                         </div>
                                     </td>
                                     <td class="frontline">
                                         <div class="tooltip-hover align-items-center" style="border-top-right-radius: 4px;"
                                             data-bs-toggle="tooltip" data-color="primary" data-bs-placement="top"
                                             title="Tương tự gói Starter kèm thêm nhiều tính năng nâng cao">
-                                            BUSINESS STANDARD
+                                            BUSINESS PLUS
                                         </div>
                                     </td>
                                 </tr>
@@ -358,7 +395,7 @@
                                 <tr>
                                     <td>
                                         <div class="category-text">
-                                            Lưu trữ dữ liệu <br>
+                                            Bảo mật dữ liệu nâng cao<br>
                                             <span class="font-col1-opa">Vault</span>
                                         </div>
                                     </td>
@@ -1817,7 +1854,7 @@
     <!-- Modal dang ky dung thu -->
     <div class="modal fade" id="dangkydungthuModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog modal-md">
+        <div class="modal-dialog modal-md modal-dialog-centered">
             <div class="modal-content">
                 <form id="registrationForm">
                     <div class="modal-header" style="border-bottom: unset;">
