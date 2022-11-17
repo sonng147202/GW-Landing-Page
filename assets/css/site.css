@@ -1049,6 +1049,9 @@ a{
     }
 
     #before_footer .add-space {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 1.5rem;
     }
 
@@ -1105,6 +1108,12 @@ a{
         right: 0;
         background-color: #fff;
         top: 15%;
+    }
+    #section1_8 .footer-support {
+        margin-left: 0;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     #section1_2 .text-question-rep{
         width: 100%;
