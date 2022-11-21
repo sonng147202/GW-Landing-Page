@@ -1,7 +1,7 @@
 $(document).ready(function () {
-    const openRegisterModal =  setTimeout(function () {
-        $('#dangkydungthuModal').modal('show');
-    }, 20000);
+    // const openRegisterModal =  setTimeout(function () {
+    //     $('#dangkydungthuModal').modal('show');
+    // }, 20000);
 
     $(".rotate1").click(function (e) {
         e.preventDefault();

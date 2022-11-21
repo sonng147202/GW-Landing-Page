@@ -214,6 +214,7 @@
     display: block;
     text-align: center;
     background-color: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: all 0.6s linear;
 }
 
@@ -323,10 +324,11 @@
 #section1_3 .mycard {
     height: 100%;
     border: 1px dotted #d3d3d3;
-    margin-left: -1px;
-    margin-bottom: -1px;
 }
-
+#section1_3 .mycard .card-body{
+    height: 100%;
+    padding: 0;
+}
 /* ============ pricing-table ============ */
 
 .pricing-table{
@@ -334,6 +336,8 @@
 }
 .pricing-table .pricing-table__title{
     text-align: center;
+    font-size: 32px;
+    font-weight: 700;
     margin-bottom: 3.5rem;
 }
 .pricing-table .carousel{
