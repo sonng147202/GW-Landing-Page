@@ -178,6 +178,9 @@
     padding-right: 22px;
 }
 
+#section1_1 .head-line {
+    border-right: 1px solid #e2e2e2;
+}
 /* ============ section-nav ============ */
 
 #section-nav {
@@ -874,6 +877,9 @@ span.font-col1 {
     margin-top: 1px;
 }
 
+#section1_7 .collapse .card {
+    border: none;
+}
 
 /* ============ section1_8 ============ */
 
