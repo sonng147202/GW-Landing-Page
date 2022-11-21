@@ -1135,11 +1135,15 @@ a{
     #section1_2 .text-question-rep{
         width: 100%;
         padding: 0 20px;
-        text-align: justify !important;
     }
     #section1_2 .text-represent{
         width: 80%;
         margin: 0 auto;
+    }
+}
+@media (max-width: 576px) {
+    #section1_2 .text-question-rep{
+        text-align: justify !important;
     }
 }
 
