@@ -1048,7 +1048,7 @@ a{
         background: #FFFFFF;
         border: 1px solid rgba(255, 255, 255, 0.5);
         margin-bottom: 15PX;
-        HEIGHT: 47px;
+        height: 5rem;
     }
 
     #section1_5 .img-benvung {
@@ -1149,7 +1149,7 @@ a{
         background: #FFFFFF;
         border: 1px solid rgba(255, 255, 255, 0.5);
         margin-bottom: 15PX;
-        HEIGHT: 47px;
+        height: 4rem;
         margin-left: 17%;
         margin-right: 17%;
     }
