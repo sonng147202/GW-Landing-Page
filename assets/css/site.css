@@ -463,12 +463,7 @@
 .pricing-table .carousel .carousel__box-svg{
     margin: 10px;
 }
-.pricing-table .carousel .slick-slide{
-    opacity: 0.5;
-}
-.pricing-table .carousel .slick-current{
-    opacity: 1;
-}
+
 .part-324 .discount-chart{
     background-color: #FFFFFF;
 }
@@ -1077,6 +1072,13 @@ a{
     .pricing-table .slick-dots > li{
         padding-left: 0;
         padding-right: 10px;
+    }
+
+    .pricing-table .carousel .slick-slide{
+        opacity: 0.5;
+    }
+    .pricing-table .carousel .slick-current{
+        opacity: 1;
     }
 
     #section1_4 .table-price {
