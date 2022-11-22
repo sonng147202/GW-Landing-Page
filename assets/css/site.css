@@ -32,13 +32,10 @@
 
 .text-title-section {
     text-align: center;
-    font-size: calc(17px + 0.08vw);
+    font-size: 2rem;
     font-weight: 700;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 68%; */
-    padding-top: 4%;
-    padding-bottom: 1%;
+    width: 68%;
+    margin: 0 auto;
 }
 
 .btn-outline-orange {
@@ -275,7 +272,7 @@
     padding-top: 1.9%;
     padding-right: 2%;
     padding-left: 2%;
-    padding-bottom: 33%;
+    padding-bottom: 30%;
 }
 
 #section1_2 .text-question {
@@ -606,6 +603,11 @@
     border: 1px solid #ecf0f1;
 }
 
+#section1_4 #chitietcacphienban {
+    font-size: 32px;
+    font-weight: 700;
+}
+
 /* ============ section1_5 ============ */
 
 #section1_5 .col1-type {
@@ -803,7 +805,6 @@ span.font-col1 {
 
 #section1_6 {
     background-color: #4285F4;
-    padding-bottom: 55px;
 }
 
 #section1_6 .text-title-section p {
@@ -1043,6 +1044,11 @@ a{
     }
 }
 @media (max-width: 767px) {
+    .text-title-section {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     #section1_6 .why-text div {
         background: #FFFFFF;
         border: 1px solid rgba(255, 255, 255, 0.5);
