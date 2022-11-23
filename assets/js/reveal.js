@@ -39,7 +39,6 @@ var discountChartImg = {
     delay: 200,
     distance: '50%',
     duration: 1800,
-    cleanup: true,
     rotate: {
         x: 0,
         y: 0,
@@ -66,7 +65,6 @@ var s6WhyText = {
     delay: 200,
     distance: '100%',
     duration: 1800,
-    cleanup: true,
     rotate: {
         x: 0,
         y: 0,
