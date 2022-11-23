@@ -96,4 +96,6 @@ $(document).ready(function () {
             clearTimeout(openRegisterModal);
         })
     })
+
+    AOS.init();
 });

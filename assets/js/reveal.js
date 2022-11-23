@@ -21,22 +21,8 @@ var iconCard = {
     origin: 'right',
     opacity: 0.5
 };
-// var carouselItem = {
-//     delay: 200,
-//     distance: '100%',
-//     duration: 1800,
-//     cleanup: true,
-//     rotate: {
-//         x: 0,
-//         y: 0,
-//         z: 180,
-//     },
-//     reset: true,
-//     origin: 'right',
-//     opacity: 0.5
-// }
 var discountChartImg = {
-    delay: 200,
+    delay: 0,
     distance: '50%',
     duration: 1800,
     rotate: {
@@ -85,11 +71,10 @@ var arrowTop = {
         z: 0,
     },
     origin: 'bottom',
-    opacity: 0
+    opacity: 0,
 };
 ScrollReveal().reveal('.img-workspace-la-gi', imgWorkspace);
 ScrollReveal().reveal('.s3-card-icon', iconCard);
-// ScrollReveal().reveal('.slick-slide', carouselItem);
 ScrollReveal().reveal('.discount-chart-img', discountChartImg);
 ScrollReveal().reveal('.section-arrow-down', sectionArrowDown);
 ScrollReveal().reveal('.s6-why-text', s6WhyText);
