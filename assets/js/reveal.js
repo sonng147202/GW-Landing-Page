@@ -51,13 +51,14 @@ var discountChartImg = {
 var sectionArrowDown = {
     delay: 0,
     distance: '100%',
-    duration: 1200,
+    duration: 1800,
     rotate: {
         x: 0,
         y: 0,
         z: 0,
     },
     reset: true,
+    scale: 0.7,
     origin: 'top',
     opacity: 0
 };
