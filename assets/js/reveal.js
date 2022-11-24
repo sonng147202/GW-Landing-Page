@@ -21,46 +21,6 @@ var iconCard = {
     origin: 'right',
     opacity: 0.5
 };
-var discountChartImg = {
-    delay: 0,
-    distance: '50%',
-    duration: 1800,
-    rotate: {
-        x: 0,
-        y: 0,
-        z: 0,
-    },
-    reset: true,
-    origin: 'left',
-    opacity: 0
-};
-var sectionArrowDown = {
-    delay: 0,
-    distance: '100%',
-    duration: 1800,
-    rotate: {
-        x: 0,
-        y: 0,
-        z: 0,
-    },
-    reset: true,
-    scale: 0.7,
-    origin: 'top',
-    opacity: 0
-};
-var s6WhyText = {
-    delay: 200,
-    distance: '100%',
-    duration: 1800,
-    rotate: {
-        x: 0,
-        y: 0,
-        z: 0,
-    },
-    reset: true,
-    origin: 'bottom',
-    opacity: 0
-};
 var arrowTop = {
     delay: 1800,
     distance: '150%',
@@ -75,9 +35,6 @@ var arrowTop = {
 };
 ScrollReveal().reveal('.img-workspace-la-gi', imgWorkspace);
 ScrollReveal().reveal('.s3-card-icon', iconCard);
-ScrollReveal().reveal('.discount-chart-img', discountChartImg);
-ScrollReveal().reveal('.section-arrow-down', sectionArrowDown);
-ScrollReveal().reveal('.s6-why-text', s6WhyText);
 
 ScrollReveal().reveal('.arrow-top', arrowTop);
 
