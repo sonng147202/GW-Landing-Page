@@ -1180,6 +1180,9 @@ a{
     #section1_2 .text-represent {
         font-size: 18px;
     }
+    .arrow-top{
+        bottom: 18vh;
+    }
 }
 
 @media (min-width: 768px) {
