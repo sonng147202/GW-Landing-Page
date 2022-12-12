@@ -7,6 +7,15 @@ var imgWorkspace = {
     origin: 'bottom',
     opacity: 0
 };
+var imgWorkspaceMobi = {
+    delay: 100,
+    distance: '30%',
+    duration: 1800,
+    reset: true,
+    scale: 0.8,
+    origin: 'bottom',
+    opacity: 0
+};
 var iconCard = {
     delay: 200,
     distance: '100%',
@@ -34,6 +43,7 @@ var arrowTop = {
     opacity: 0,
 };
 ScrollReveal().reveal('.img-workspace-la-gi', imgWorkspace);
+ScrollReveal().reveal('.img-workspace-la-gi-mobi', imgWorkspaceMobi);
 ScrollReveal().reveal('.s3-card-icon', iconCard);
 
 ScrollReveal().reveal('.arrow-top', arrowTop);
